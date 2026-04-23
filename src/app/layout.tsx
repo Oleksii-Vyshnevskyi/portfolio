@@ -23,6 +23,12 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/images/SMA-hero-01.png"],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
