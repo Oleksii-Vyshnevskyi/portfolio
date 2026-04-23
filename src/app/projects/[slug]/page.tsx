@@ -18,12 +18,12 @@ export async function generateMetadata({ params }: ProjectPageProps) {
 
   if (!project) {
     return {
-      title: "Oleksii Vyshnevskyi - Product Designer",
+      title: "Oleksii Vyshnevskyi — Product Designer",
     };
   }
 
   return {
-    title: "Oleksii Vyshnevskyi - Product Designer",
+    title: "Oleksii Vyshnevskyi — Product Designer",
     description: project.summary,
   };
 }

@@ -1,10 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const siteTitle = "Oleksii Vyshnevskyi — Product Designer";
+const siteDescription =
+  "Product designer focused on complex SaaS systems, workflows, and data-driven interfaces. Building tools that improve decision-making and real-world operations.";
+
 export const metadata: Metadata = {
-  title: "Oleksii Vyshnevskyi - Product Designer",
-  description:
-    "A minimalist product designer portfolio focused on SaaS and enterprise products.",
+  metadataBase: new URL("https://alexvyshnevskyi.com"),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "https://alexvyshnevskyi.com",
+    siteName: "Oleksii Vyshnevskyi",
+    images: [
+      {
+        url: "/images/SMA-hero-01.png",
+        width: 2560,
+        height: 1948,
+      },
+    ],
+    type: "website",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
